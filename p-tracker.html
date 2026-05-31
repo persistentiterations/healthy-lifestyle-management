@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Quicksand:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Baloo+2:wght@700;800&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="manual.css">
+<style>
+html,body{margin:0;padding:0;overflow:hidden;background:#fdfdff;width:816px;height:1056px;}
+.page{position:static!important;display:block!important;width:816px!important;height:1056px!important;box-shadow:none!important;}
+</style>
+</head>
+<body>
+<div class="page">
+  <img class="kh-badge" src="assets/kinsman-logo.png" alt="Kinsman Health Center" style="width:88px;">
+  <h1 class="title-type" style="font-size:40px;letter-spacing:.06em;">POUND LOST TRACKER</h1>
+  <div class="pt-heads">
+    <div class="ph">DATE :</div><div class="ph">STARTING WEIGHT :</div><div class="ph">TARGET WEIGHT :</div>
+  </div>
+  <div class="pt-frame"><div class="pt-grid" id="ptgrid"></div></div>
+  <span class="pageno"></span>
+  <script>
+  var pt=document.getElementById('ptgrid');
+  for(var n=1;n<=56;n++){var c=document.createElement('div');c.className='pt-circle';c.innerHTML='<div class="pt-inner">'+n+'</div>';pt.appendChild(c);}
+  </script>
+</div>
+</body>
+</html>
